@@ -10,10 +10,14 @@
     --padding-default: 20px;
 
     /* Colors */
-    --bacground-color-navigstion: #00000088;
-    --bacground-color-light: #ededed;
-    --color-white: #FFFFFF;
-    
+    --bacground-color-navigstion:#005555b2;
+    --navigation-color1-:#ededed;
+    --navigation-color2-:#F05A7E;
+    --color-white:#FFFFFF;
+    --color-black:#1A2130;
+    --color-green-dark:#069A8E;
+    --color-green-light:#A1E3D8;
+    --color-end:#E5E1DA;
 }
 
 /* reset */
@@ -71,12 +75,12 @@ body {
 }
 
 .menu_page ul li a:hover {
-    color: #F7FF93;
+    color: #F05A7E;
 }
 
 .image {
-    background-image: url('https://environmentjournal.ca/wp-content/uploads/2024/05/plastics-surf-and-sand-small-Getty-Images.jpg');
-    color: var(--bacground-color-light);
+    background-image: url('https://s183.convertio.me/p/1170JIL-9Wk9k1epkr4H3g/5d5f503a8fc6d6e107f15ba03f8779d2/DSC04239-4.png');
+    color: var(--color-white);
     width: var(--width-full);
     height: auto;
     background-repeat: no-repeat;
@@ -98,28 +102,112 @@ body {
     grid-column: 4 / span 4;
     margin-top: 250px;
     grid-row: 1;
+    text-shadow: 1px 1px 1px var(--navigation-color2-); /* for text shadow */
+/*     box-shadow: 2px 2px 2px #333333; */ /* for box shadow */
+}
+
+
+.image2 {
+    background-image: url('https://s142.convertio.me/p/jjyleLdxjlwxgjTofPnlTw/5d5f503a8fc6d6e107f15ba03f8779d2/DSC04250.png');
+    color: var(--color-white);
+    width: var(--width-full);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    background-position: 50% 50%;
+    margin-top: -40px;
+}
+
+.image2_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    width: var(--width-12col);
+    margin: 0 auto;
+}
+
+.image2_text {
+    grid-column: 2 / span 4;
+    margin-top: 250px;
+    grid-row: 1;
     text-shadow: 1px 1px 1px #333333; /* for text shadow */
 /*     box-shadow: 2px 2px 2px #333333; */ /* for box shadow */
 }
 
-.signature {
+.image2_text button {
+    background-color: transparent;
+    border: 1px solid transparent; 
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.image2_text button a {
+    color: #F05A7E;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px #333333;
+}
+
+.categories_content {
     width: var(--width-12col);
     margin: 20px auto; 
-    background-color: #A1E3D8;
+    background-color:#E5E1DA;
     height: 200px;
     display: flex;
+    grid-template-columns: repeat(7, 1fr);
+    gap: var(--grid-gap);
+    box-sizing: border-box;
     align-items: center;
     border-radius: 5px; 
+    justify-content: space-evenly;
+}
+.categories_content_block_icon {
+    justify-content:center;
+    display: flex;
+    color:#F05A7E;
+}
+.categories_content_block_text h4{
+    color:#069A8E;
 }
 
-.signature_box_area_text_left_top button{
-    background-color: #000000;
-    border: 1px solid ;
-    padding: 50px 50px;
-    border-radius: 5px;
+.categories_content_block { 
+    padding: 20px 20px 20px 20px;
+    
 }
+
+.content_image_image {
+    clip-path: polygon(0 29%, 100% 0, 100% 100%, 0% 100%);
+    background-image: url('https://picsum.photos/1920/800');
+    height: 700px;
+    width: var(--width-full);
+
+}
+.content_image-container {
+    width: var(--width-12col);
+    margin: 85px auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10px auto;
+
+}
+.content_image-text {
+    grid-column: 4 / span 4;
+    margin-top: 300px;
+    grid-row: 2;
+    color: var(--bacground-color-light);
+}
+
 
 .content_one_text{
+    color: #A1E3D8;
+}
+
+.content_block_one_text h5{
     color: #069A8E;
 }
 
@@ -138,7 +226,7 @@ body {
 
 .content_block{
     display: grid;
-    width: var(--width-12col);
+    width: 1000px;
     grid-template-columns: 1fr 1fr;
     margin: 10px auto;
     color: #1A2130;
@@ -314,7 +402,7 @@ body {
     background-color: transparent;
     -webkit-appearance: none;
     outline: none;
-    border: 1px solid #F7FF93;
+    border: 1px solid #F05A7E;
     border-radius: 5px;
     padding: 10px 20px 10px 40px;
     color: var(--bacground-color-light);
@@ -325,7 +413,7 @@ body {
     background-color: transparent;
     -webkit-appearance: none;
     outline: none;
-    border: 1px solid #F7FF93;
+    border: 1px solid #F05A7E;
     border-radius: 5px;
     padding: 10px 20px 10px 40px;
     color: var(--bacground-color-light);
@@ -336,7 +424,7 @@ body {
     background-color: transparent;
     -webkit-appearance: none;
     outline: none;
-    border: 1px solid #F7FF93;
+    border: 1px solid #F05A7E;
     border-radius: 5px;
     padding: 10px 20px 10px 40px;
     color: var(--bacground-color-light);
@@ -373,7 +461,7 @@ body {
 }
 
 .information_cotainer_text_area_right button a {
-    color: #F7FF93;
+    color: #F05A7E;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
